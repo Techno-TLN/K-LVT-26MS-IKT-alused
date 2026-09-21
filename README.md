@@ -38,7 +38,7 @@ Kohtumised toimuvad üle nädala, 8 kohtumist á 2 tundi (16 tundi kokku, ehk 16
 | Nr | Kuupäev | Teema | Ülesanne | Fail |
 |---|---|---|---|---|
 | 1 | 07.09.2026 (E) | Sissejuhatus ja õppekorraldus | AI-teenuse ressursivajadus ja AI kasutus õppetöös (5 t) | [01](01-sissejuhatus-ja-oppekorraldus.md) |
-| 2 | 21.09.2026 (E) | Arvusüsteemid ja andmemahu ühikud | Arvusüsteemid ja andmemahu ühikud (4 t) | [02](02-arvusysteemid-ja-andmemahu-uhikud.md) |
+| 2 | 21.09.2026 (E) | Arvusüsteemid ja andmemahu ühikud | Minu kodune võrk: IP, MAC, mask, gateway, DNS (4 t) | [02](02-arvusysteemid-ja-andmemahu-uhikud.md) |
 | 3 | 05.10.2026 (E) | Teenuste liigid, riistvararessursid ja teksti kodeerimine | Teenuseliigitus ja tekstifaili andmemaht (5 t) | [03](03-teenuste-liigid-ja-riistvararessursid.md) |
 | 4 | 19.10.2026 (E) | Võrguressursid ja video kodeerimine | Videofaili andmemaht ja ribalaius (4 t) | [04](04-vorguressursid-ja-video-kodeerimine.md) |
 | 5 | 02.11.2026 (E) | Infrastruktuuriressursid | Toitevajadus ja UPS (4 t) | [05](05-infrastruktuuriressursid.md) |
@@ -74,6 +74,7 @@ Kohtumised toimuvad üle nädala, 8 kohtumist á 2 tundi (16 tundi kokku, ehk 16
 - Arvutustabel ressursikalkulatsiooniks (riistvara, energia, litsentsikulu).
 - Näidis „IKT teenuste ja ressursside kaart“ mall rühmatöö jaoks.
 - Arvuti- ja internetiühendusega töökohad kohtumisteks 2–6 (vajalikud arvutusharjutusteks ja tootja dokumentatsiooni otsimiseks).
+- Esitlus „Kohtumine 2 — Arvusüsteemid ja andmemahu ühikud” (Claude Artifact, kuvatakse tunnis) ja Exceli tööriist `IP_mask_võrguaadress_kalkulaator.xlsx` (samas kaustas) — IP-aadressi, võrgumaski ja võrguaadressi seoste kahend-/kümnendsüsteemi kaudu õppimiseks, kasutusel nii tunnis kui Ülesandes 2.
 
 ## Märkused ja lahtised otsused
 
@@ -90,6 +91,7 @@ Kohtumised toimuvad üle nädala, 8 kohtumist á 2 tundi (16 tundi kokku, ehk 16
 ## Muudatuste logi
 
 - **20.09.2026:** Arvusüsteemid ja andmemahu ühikud eraldati kohtumisest 1 omaette kohtumiseks (uus Kohtumine 2). Teenuste liigid liideti kohtumisega 3 (varem eraldi kohtumine). Ülesanded 1–3 korraldati vastavalt ümber (AI-teenuse ülesanne nihkus kohtumisele 1, arvusüsteemide+andmemahu ülesanne kohtumisele 2, teenuseliigitus liideti tekstifaili andmemahu ülesandega kohtumisel 3). Kohtumiste koguarv (8), kuupäevad ja iseseisva töö kogumaht (36 t) jäid muutumata.
+- **21.09.2026:** Lisati Exceli tööriist `IP_mask_võrguaadress_kalkulaator.xlsx` (IP/mask/võrguaadress kahend-/kümnendsüsteemi kaudu) ja Kohtumine 2 esitlus. Ülesanne 2 asendati uue ülesandega „Minu kodune võrk“ (MAC, IP, mask, gateway, DNS leidmine + aadressiruumi arvutus, boonusosaga) — täielik ülesandeleht failis `Ulesanne2_Minu_koduvork.docx`. Maht (4 t) ja tähtaeg jäid muutumata.
 
 ---
 
