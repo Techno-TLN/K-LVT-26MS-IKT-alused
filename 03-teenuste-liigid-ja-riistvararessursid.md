@@ -28,6 +28,8 @@ Materjalid: esitlus „Kohtumine 3 — Teenused, riistvara ja teksti kodeerimine
 
 ## Ülesanne 3 — Teenused ja kodeeringu katse (HTML)
 
+> **Märkus (05.10.2026, tunni järel):** Koduülesannet lihtsustati. Kohustuslikuks jäid A osa (SaaS/PaaS/IaaS) ning kahe HTML-faili (ANSI ja UTF-8, õige meta charset) tegemine ja brauseris kuvamise võrdlemine. **Valikuliseks** muudeti hex-vaates kontroll ja faili suuruse arvutus (ülaltoodud valem ja kontrollskript jäävad õpetaja abivahendiks). Nõuded ja hindamiskriteeriumid allpool kirjeldavad esialgset täisversiooni.
+
 **Maht:** 5 t (A ~1,5 t, B ~3,5 t) · **Tähtaeg:** 18.10.2026 kell 20:00 (Kohtumise 4 eelõhtu)
 
 Täielik ülesandeleht: `Ulesanne3_Teenused_ja_kodeering.docx` · HTML-mall: `Ulesanne3_mall.txt` · õpetaja kontrollskript: `kontroll_ulesanne3.py`.

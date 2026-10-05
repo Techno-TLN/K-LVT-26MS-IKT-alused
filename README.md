@@ -95,6 +95,13 @@ Kohtumised toimuvad üle nädala, 8 kohtumist á 2 tundi (16 tundi kokku, ehk 16
 - **21.09.2026:** Lisati Exceli tööriist `IP_mask_võrguaadress_kalkulaator.xlsx` (IP/mask/võrguaadress kahend-/kümnendsüsteemi kaudu) ja Kohtumine 2 esitlus. Ülesanne 2 asendati uue ülesandega „Minu kodune võrk“ (MAC, IP, mask, gateway, DNS leidmine + aadressiruumi arvutus, boonusosaga) — täielik ülesandeleht failis `Ulesanne2_Minu_koduvork.docx`. Maht (4 t) ja tähtaeg jäid muutumata.
 - **05.10.2026:** Ülesanne 3 muudeti: A osa jäi (teenuseliigitus), B osa asendati HTML-ülesandega (mall antakse ette; üks fail ANSI + `windows-1252`, teine UTF-8 + `utf-8`, arvutus, vale-meta katse ja hex-kontroll). Lisati Kohtumise 3 esitlus, viis klassiruumi harjutust, hex-vaate abijuhend ja õpetaja kontrollskript. Tähtaeg 18.10.2026 kell 20:00, maht 5 t.
 
+## Tagasiside Kohtumisest 3 (05.10.2026)
+
+- Materjalide vorming edaspidi: esitletav sisu slaidina + tunni detailne sisu markdown-failis; harjutused samas tunni md-failis; koduülesanne eraldi md-failis. Eraldi Wordi, Exceli ega PowerPointi faile ei tehta.
+- Lisada sisusse **CSV-formaat** (seos kodeeringuga: UTF-8/ANSI, BOM, eraldaja, komakoht); sage sisendformaat infosüsteemides ja seadmetes, sh valguspultides. Kohtumine 3 jäi sellest ilma, kohaldada Kohtumisel 4 või lisada Kohtumise 3 materjali.
+- Koduülesande lihtsustus: vt märkust Kohtumise 3 failis.
+- Suuri muudatusi olemasolevatesse materjalidesse praegu ei tehta.
+
 ---
 
 *Terviklik ühefaililine versioon (varasem koostamise ajalugu, ei kajasta 20.09.2026 muudatusi) on failis `Tooplaan_ITSusteemid_OV1.md` samas kaustas.*
