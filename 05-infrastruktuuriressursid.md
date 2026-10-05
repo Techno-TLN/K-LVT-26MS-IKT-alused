@@ -4,6 +4,7 @@
 
 ## Tunni sisu
 
+- **Tunni algus (~25 min): CSV-formaat.** Seos teksti kodeerimisega (UTF-8 vs ANSI, BOM), eraldaja (`,` vs `;`), jutumärgid, reavahetus; praktiline import **Outlook veebi** People → Import contacts (Outlooki päised, UTF-8 soovitatav). Detailne sisu ja harjutused lisatakse Kohtumise 5 ettevalmistusel.
 - Toide, UPS, jahutus, kaablindus, füüsiline paigutus.
 - Praktikas: toitevajaduse (W/A) ja UPS-i võimsuse hindamine valitud seadmestiku näitel.
 
