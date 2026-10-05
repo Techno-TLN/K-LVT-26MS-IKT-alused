@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<title>Kodeeringu katse</title>
+</head>
+<body>
+<h1>Öö, Õnne ja Ülle</h1>
+<p>Öökull ja jänes jõudsid üle põllu külla.</p>
+<p>Täna õpime, kuidas arvuti täpitähti salvestab.</p>
+<p>Autor: Eesnimi Perekonnanimi</p>
+</body>
+</html>
