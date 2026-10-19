@@ -17,11 +17,11 @@
 | 00:00–00:05 | Ülesande 3 tagasivaade: kuidas HTML-failid kuvati, krõbin ja meta charset | arutelu |
 | 00:05–00:30 | Võrguressursid: ribalaius, latentsus, bit vs bait, Wi-Fi vs kaabel, topoloogia, **TCP ja UDP** | 1. `ping` ja latentsus; 2. Mbps ↔ MB/s |
 | 00:30–00:50 | Video kodeerimine: resolutsioon, kaadrisagedus, värvisügavus, bitikiirus, kodek, **video edastuse protokollid** | 3. Tihendamata video maht |
-| 00:50–01:10 | Praktika: OBS salvestus | 4. Kaks salvestust, tegelik suurus vs arvutus |
-| 01:10–01:25 | Praktika: VLC ülekanne paaris | 5. Voog arvuti vahel, latentsuse hindamine |
-| 01:25–01:30 | Ülesanne 4 ja kokkuvõte | — |
+| 00:50–01:15 | Praktika: OBS salvestus | 4. Kaks salvestust, tegelik suurus vs arvutus |
+| 01:15–01:23 | Praktika: VLC ülekanne (**õpetaja demo**, paaris tegemine valikuline) | 5. Voog kahe arvuti vahel, latentsuse hindamine |
+| 01:23–01:30 | Ülesanne 4 ja kokkuvõte | — |
 
-Kui aega napib, jäta harjutus 5 õpetaja demoks. Selle tunni praktika vajab rohkem aega kui eelmised, seega teooria hoia lühike.
+Harjutus 5 (VLC) on tunnis **õpetaja demo** (~8 min), sest võrgu- ja tulemüüriprobleemid võivad paaristöö venitada. Paaris tegemine on **valikuline**: kes soovib, teeb tunni lõpus (kui aega jääb) või kodus. Selle tunni praktika vajab rohkem aega kui eelmised, seega teooria hoia lühike.
 
 ## 1. Tagasivaade: Ülesanne 3 (5 min)
 
@@ -56,7 +56,7 @@ Kui aega napib, jäta harjutus 5 õpetaja demoks. Selle tunni praktika vajab roh
 
 Oodatav: gateway on kõige kiirem (tavaliselt alla ~5 ms), internetisihid aeglasemad. Küsi: miks? (rohkem lülisid, kaugem füüsiline vahemaa). Võrdle Wi-Fi-ga ühendatud arvuteid kaabliga ühendatuga, kui klassis on mõlemaid.
 
-**Windowsi vahendid:** näita õpilastele lühidalt, kuidas oma arvutis võrku jälgida: Task Manager → Performance → Ethernet/Wi-Fi (*Send*, *Receive*), Resource Monitor (`resmon` → Network) ja `netsh wlan show interfaces`. Täpsed sammud on A4 spikris „Windowsi vahendid võrgu jõudluse vaatamiseks". Kasuta seda ka harjutuses 5 (VLC): vaata saatja *Send* ja vastuvõtja *Receive* väärtust.
+**Windowsi vahendid:** näita õpilastele lühidalt, kuidas oma arvutis võrku jälgida: Task Manager → Performance → Ethernet/Wi-Fi (*Send*, *Receive*), Resource Monitor (`resmon` → Network) ja `netsh wlan show interfaces`. Täpsed sammud on A4 spikris „Windowsi vahendid võrgu jõudluse vaatamiseks". Kasuta seda ka harjutuse 5 (VLC demo) ajal: vaata saatja *Send* ja vastuvõtja *Receive* väärtust.
 
 ### Harjutus 2 — Mbps ↔ MB/s (5 min)
 
@@ -107,7 +107,7 @@ e) Kui sama video on H.264-ga 5 Mbps, siis mitu MB on 10 s? Mitu korda väiksem?
 
 **Vastused:** a) 1280 × 720 = 921 600 pikslit × 3 = 2 764 800 baiti. b) × 30 = 82 944 000 B/s ≈ 82,9 MB/s. c) × 10 = 829 440 000 B ≈ 829 MB. d) 82 944 000 × 8 = 663 552 000 bit/s ≈ 663,6 Mbps. e) 5 × 10 ÷ 8 = 6,25 MB; 829,44 ÷ 6,25 ≈ 133 korda väiksem.
 
-## 4. Praktika: OBS (20 min)
+## 4. Praktika: OBS (25 min)
 
 **Tööriist:** OBS Studio. Kontrolli enne tundi, et see on klassi arvutites olemas või lubatud paigaldada (vajadusel kasuta portable-versiooni).
 
@@ -123,11 +123,11 @@ e) Kui sama video on H.264-ga 5 Mbps, siis mitu MB on 10 s? Mitu korda väiksem?
 
 **Arutelu:** mis juhtuks, kui Rate Control oleks VBR või CRF? (Staatilise ekraani puhul fail oluliselt väiksem, sest tihendus kasutab kaadrite sarnasust.) Kes märkas kvaliteedierinevust?
 
-## 5. Praktika: VLC ülekanne (15 min)
+## 5. Praktika: VLC ülekanne (õpetaja demo, ~8 min)
 
-**Harjutus 5 — Voog arvuti vahel**
+**Harjutus 5 — Voog kahe arvuti vahel (õpetaja demo; paaris tegemine valikuline)**
 
-Tee paaris. Üks on saatja, teine vastuvõtja. Kasutage Ülesandes 2 leitud IP-aadresse.
+Õpetaja teeb demo kahe seadmega (nt oma arvuti saatjaks, üks õpilase arvuti vastuvõtjaks) ja õpilased vaatavad ning hindavad latentsust. Kes soovib, saab sama paaris järele proovida tunnis (kui aega jääb) või kodus; juhis on A4 spikris „VLC praktika juhis”. Paaris tehes on üks saatja, teine vastuvõtja ning kasutatakse Ülesandes 2 leitud IP-aadresse.
 
 *Saatja:*
 
@@ -147,7 +147,7 @@ Tee paaris. Üks on saatja, teine vastuvõtja. Kasutage Ülesandes 2 leitud IP-a
 
 **Arutelu:** miks ülekanne viibib mitu sekundit, kuigi võrk on kiire? (puhverdus + kodeerimine + dekodeerimine). Ribalaius ei ole latentsus.
 
-## Ülesanne 4 ja kokkuvõte (5 min)
+## Ülesanne 4 ja kokkuvõte (7 min)
 
 Tutvusta ülesannet „Minu võrk ja minu film” (täpne juhend: [04-ulesanne-4.md](04-ulesanne-4.md), ~3 t). Soovita OBS-failid alles hoida, neid kasutatakse koduülesandes. Tähtaeg **01.11.2026 kell 20:00**.
 
@@ -162,8 +162,8 @@ Kolm mõtet, mida meelde jätta:
 ## Õpetaja ettevalmistus
 
 - [ ] OBS ja VLC on klassi arvutites või lubatud paigaldada.
-- [ ] Klassi võrgus saavad seadmed omavahel suhelda (VLC voog), muidu valmista demo.
-- [ ] Testi VLC voog ühe paariga läbi, sh tulemüüri küsimus.
+- [ ] VLC demo jaoks on kaks seadet samas võrgus (või kaabliga); kui klassi Wi-Fi eraldab kliendid, kasuta kaablit või näita demot ühe arvuti peal (voog `localhost`-i kaudu).
+- [ ] Testi VLC voog enne tundi läbi, sh tulemüüri küsimus.
 - [ ] Kontrolli, et `ping` ei ole võrgus blokeeritud.
 - [ ] Trüki või jaga arvutuste valemid (slaidid ja see fail).
 

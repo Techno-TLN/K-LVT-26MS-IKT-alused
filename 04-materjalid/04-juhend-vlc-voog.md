@@ -1,6 +1,6 @@
 # VLC praktika: video voog kahe arvuti vahel
 
-<p class="sub">Kohtumine 4 · Harjutus 5 · ~15 min · tööta paaris (saatja ja vastuvõtja) · VLC 3.x</p>
+<p class="sub">Kohtumine 4 · Harjutus 5 · õpetaja demo tunnis (~8 min), paaris tegemine valikuline · VLC 3.x</p>
 
 **Eesmärk:** edasta video üle võrgu ühest arvutist teise ja hinda latentsust sekundites.
 

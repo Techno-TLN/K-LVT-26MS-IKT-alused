@@ -103,6 +103,7 @@ Kohtumised toimuvad üle nädala, 8 kohtumist á 2 tundi (16 tundi kokku, ehk 16
 - Suuri muudatusi olemasolevatesse materjalidesse praegu ei tehta.
 - **05.10.2026 (hiljem):** Kohtumine 4 kirjutati ümber uues vormingus: tunni md-fail koos harjutustega + koduülesanne eraldi md-failis (`04-ulesanne-4.md`). Lisati OBS- ja VLC-praktika, Ülesanne 4 lihtsustati (kohustuslik: võrgukiirus, video arvutus, OBS-salvestus). CSV-formaat viidi Kohtumise 5 algusse.
 - **19.10.2026:** Kohtumisele 4 lisati neli A4 abimaterjali (`04-materjalid/`: põhimõistete spikker, video kodeerimise spikker, OBS Studio juhend, VLC praktika juhis, Windowsi vahendid võrgu jõudluse vaatamiseks, TCP ja UDP ning video edastuse protokollid; PDF + md). Ülesanne 4 kirjutati ümber lihtsamaks ja isiklikumaks („Minu võrk ja minu film”, ~3 t, tähtaeg 01.11.2026 kell 20:00).
+- **19.10.2026 (hiljem):** Kohtumise 4 VLC-harjutus (5) muudeti tunnis õpetaja demoks (~8 min), paaris tegemine on valikuline; OBS sai 25 min, kokkuvõte 7 min (ajakava 5/25/20/25/8/7). Slaidid, tunni md, VLC spikker ja Ülesande 4 valikulised osad uuendati.
 
 ---
 

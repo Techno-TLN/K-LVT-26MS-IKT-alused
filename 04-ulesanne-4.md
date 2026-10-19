@@ -61,7 +61,7 @@ Kirjuta 3–4 lauset: mis üllatas sind kõige rohkem (nt tihendamata filmi maht
 
 - Korda mõõtmist nii Wi-Fi kui kaabliga ja võrdle ping'i.
 - Speedtesti ajal tee Task Manageri (*Performance → Ethernet/Wi-Fi*) ekraanipilt ja võrdle *Receive* tippu speedtesti tulemusega (vt [Windowsi vahendite spikker](04-materjalid/04-spikker-windows-vorgu-joudlus.pdf)).
-- Korda tunnis tehtud VLC voogu kodus kahe seadme vahel ja hinda latentsust.
+- VLC voog paaris: tunnis näitas õpetaja demot, proovi ise kodus kahe seadme vahel (vt [VLC juhis](04-materjalid/04-juhend-vlc-voog.pdf)) ja hinda latentsust.
 - Vaata OBS-salvestuse faili baite hex-vaates (vt Kohtumise 3 hex-juhend).
 
 ## Mida esitada (PDF)
