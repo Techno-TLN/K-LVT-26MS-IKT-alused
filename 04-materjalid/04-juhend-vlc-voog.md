@@ -50,6 +50,6 @@ Saatja asemel allikaks töölaud: **Media → Open Capture Device…** → *Capt
 | Vastuvõtja ei ühendu | Kontrolli IP, porti (8080), kirjutamisviisi (`http://`, mitte `https://`) ja `ping`-i. |
 | Windowsi tulemüür | *Windows Security → Firewall → Allow an app* → lisa **VLC** ja märgi **Private**. |
 | Klassi Wi-Fi ei lase seadmeid kokku | Kasutage kaablit või tehke demo õpetaja arvutiga. VPN peab olema välja lülitatud. |
-| Pilt tõmbleb, protsessor 100 % | Vähenda töölaua *frame rate* 5-ni või kasuta lühemat/väiksemat videot. |
+| Pilt hangub või kaadreid jääb vahele, protsessor 100 % | Vähenda töölaua *frame rate* 5-ni või kasuta lühemat/väiksemat videot. |
 | Viivitust tahaks vähendada | Vastuvõtja: *Tools → Preferences → Show settings: All → Input/Codecs → Network caching (ms)* = 300. Liiga väike väärtus tekitab katkeid. |
 | Voo lõpetamine | Saatja vajutab VLC-s **Stop**. |
