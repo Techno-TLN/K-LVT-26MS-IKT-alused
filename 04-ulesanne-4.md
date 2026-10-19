@@ -1,67 +1,92 @@
-# Ülesanne 4 — Võrgukiirus ja video maht
+# Ülesanne 4 — Minu võrk ja minu film
 
-**Seotud kohtumine:** [Kohtumine 4](04-vorguressursid-ja-video-kodeerimine.md) · **Maht:** ~4 t · **Tähtaeg:** 01.11.2026 kell 20:00 (Kohtumise 5 eelõhtu)
+**Seotud kohtumine:** [Kohtumine 4](04-vorguressursid-ja-video-kodeerimine.md) · **Maht:** ~3 t · **Tähtaeg:** 01.11.2026 kell 20:00 (Kohtumise 5 eelõhtu)
 
-**Esitamine:** Teamsi Ülesanded (Assignments) rakenduses, ühe PDF-ina. Failinimi: `Perekonnanimi_Eesnimi_Ulesanne4.pdf`. Videofaile ei esitata, vaid nende **Properties-akna ekraanipilt**.
+**Esitamine:** Teamsi Ülesanded (Assignments) rakenduses, ühe PDF-ina. Failinimi: `Perekonnanimi_Eesnimi_Ulesanne4.pdf`. Videofaile ei esitata, vaid nende ekraanipildid.
 
-## Eesmärk
+**Abimaterjalid:** [põhimõistete spikker](04-materjalid/04-spikker-pohimoisted.pdf) · [video kodeerimise spikker](04-materjalid/04-spikker-video-kodeerimine.pdf)
 
-Mõõta oma seadmetel võrgu kiirust ja video mahtu ning seostada tulemused arvutusega tunnis õpitud valemitega.
+## Mida sa teada saad
 
-## A osa — Minu võrgu kiirus (kohustuslik, ~1 t)
+Kui kiire on sinu internet päriselt? Mitu videot saab sinu kodus korraga vaadata? Ja kui kaua võtaks sinu lemmikfilmi allalaadimine? Kõik vastused tulevad sinu enda numbritest.
 
-1. Tee oma kodus (või koolis) **kiirusmõõtmine** (nt speedtest-teenusega): allalaadimine (Mbps), üleslaadimine (Mbps), ping (ms). Lisa ekraanipilt kuupäeva ja kellaajaga.
-2. Tee `ping` kolmele sihile (oma gateway, `1.1.1.1`, `google.com`), 10 paketti. Esita tabelina min / keskmine / max ning ekraanipilt.
-3. Teisenda allalaadimise kiirus **MB/s**-ks (Mbps ÷ 8) ja arvuta, kui kaua võtaks 4 GB faili allalaadimine (arvutuskäik nähtav).
-4. **Kui võimalik**, korda kiirusmõõtmist ja `ping`-i nii Wi-Fi kui kaabliga ning kirjuta 2–3 lauset, kuidas need erinesid. Kui kaablit pole, kirjuta, kuidas tulemus muutub, kui seisad ruuterist kaugemal.
+## 1. Mõõda oma võrku (~30 min)
 
-## B osa — Video maht (kohustuslik, ~2 t)
+1. Tee **kiirusmõõtmine** (nt speedtest-teenusega): allalaadimine (Mbps), üleslaadimine (Mbps), ping (ms). Lisa ekraanipilt koos kuupäeva ja kellaajaga.
+2. Tee `ping` oma gateway'le ja `google.com`-ile (10 paketti): `ping -n 10 aadress` (Windows) või `ping -c 10 aadress` (macOS/Linux). Lisa ekraanipilt.
+3. Kirjuta tulemused tabelisse ja **teisenda allalaadimiskiirus MB/s-ks** (Mbps ÷ 8).
 
-**B1. Tihendamata video (arvutus).** Võta **oma arvuti ekraani resolutsioon** (lisa Seadete ekraanipilt), 24 bitti piksli kohta, 30 kaadrit sekundis, kestus 60 sekundit. Arvuta:
+| | Tulemus |
+|---|---|
+| Allalaadimine (Mbps) | |
+| Allalaadimine (MB/s) | |
+| Üleslaadimine (Mbps) | |
+| Ping speedtestis (ms) | |
+| Ping gateway'ni, keskmine (ms) | |
+| Ping google.com'i, keskmine (ms) | |
 
-- baite kaadris;
-- baite sekundis (MB/s);
-- 60 s kogumaht (GB);
-- vajalik ribalaius (Mbps).
+## 2. Mitu videovoogu mahub minu koju? (~60 min)
 
-**B2. OBS salvestus (mõõtmine).** Salvesta OBS-iga oma ekraanist **30 sekundit** kahe seadega:
+**a) Mis on päris video bitikiirus?** Võta **fail, mille suurust tead**: tunnis tehtud OBS-salvestus *või* mõni **video oma telefonist**. Loe Propertiesist faili suurus (**Size**) ja video kestus sekundites. Arvuta:
 
-| | Resolutsioon | FPS | Bitikiirus |
-|---|---|---|---|
-| Salvestus 1 | 1920 × 1080 | 30 | 6000 kbps |
-| Salvestus 2 | 1280 × 720 | 30 | 2500 kbps |
+**bitikiirus (Mbps) = maht (MB) × 8 ÷ kestus (s)**
 
-Lisa kummagi faili **Properties-akna ekraanipilt** (Size, mitte Size on disk). Arvuta oodatav maht (bitikiirus × aeg ÷ 8) ja võrdle tegelikuga.
+Lisa Propertiesi ekraanipilt ja arvutuskäik. Kumb on suurem: sinu telefonivideo või OBS-salvestus? Kirjuta üks lause, miks sa arvad, et nii on.
 
-**B3. Võrdlus ja selgitus (3–5 lauset).** Mitu korda väiksem on 1080p salvestus (6000 kbps) võrreldes oma B1 tihendamata arvutusega? Miks erineb tegelik suurus arvutatust? Miks tuleb video enne edastamist tihendada?
+**b) Mitu voogu mahub?** Eelda, et kasutatav ribalaius on **75 %** sinu allalaadimiskiirusest. Arvuta, mitu voogu korraga mahub:
 
-## C osa — Valikuline
+| Voog | Bitikiirus | Mitu mahub minu koju |
+|---|---|---|
+| 1080p (YouTube soovitus) | 8 Mbps | |
+| 4K (YouTube soovitus) | 40 Mbps | |
 
-- **VLC ülekanne:** korda tunnis tehtud VLC voogu kodus kahe seadme vahel (nt telefon ja arvuti, või kaks arvutit) ja hinda latentsust (sekundites).
-- **Mahutavus:** arvuta, mitu 1080p 6000 kbps vood mahuks sinu allalaadimiskiiruse (või üleslaadimise) peale, kasutades 75% kasutatavat ribalaiust.
+Kirjuta kaks lauset: kas sinu kodu võrk jätkab, kui kolm inimest vaatavad korraga 1080p videot?
+
+## 3. Minu lemmikfilm (~45 min)
+
+Vali üks **film, sari või video**, mida sa tõesti vaatad (kestus tead või leiad internetist). Arvuta:
+
+1. Faili maht, kui video on 1080p ja 8 Mbps: **MB = Mbps × sekundid ÷ 8**.
+2. Kaua võtaks selle allalaadimine **sinu** kiirusel (osast 1)?
+3. Kui suur oleks sama film **tihendamata** (1920 × 1080, 24 bitti, 30 fps)? Kasuta valemit: **laius × kõrgus × 3 × fps × sekundid**.
+4. Mitu korda suurem on tihendamata variant?
+
+Lisa filmi nimi ja arvutuskäik (valem + väärtuste asendus + vastus).
+
+## 4. Kokkuvõte (~15 min)
+
+Kirjuta 3–4 lauset: mis üllatas sind kõige rohkem (nt tihendamata filmi maht, kodune kiirus või telefonivideo bitikiirus)?
+
+## Valikuline (ei ole kohustuslik)
+
+- Korda mõõtmist nii Wi-Fi kui kaabliga ja võrdle ping'i.
+- Korda tunnis tehtud VLC voogu kodus kahe seadme vahel ja hinda latentsust.
+- Vaata OBS-salvestuse faili baite hex-vaates (vt Kohtumise 3 hex-juhend).
 
 ## Mida esitada (PDF)
 
-1. A osa: kiirusmõõtmise ja `ping`-i ekraanipildid, tabel, MB/s ja 4 GB allalaadimise arvutus.
-2. B1: Seadete ekraanipilt ja arvutuskäik (valem + väärtuste asendus + vastus).
-3. B2: kaks Properties-akna ekraanipilti, oodatav vs tegelik maht.
-4. B3: lühike selgitus.
+1. Osa 1: ekraanipildid ja tabel.
+2. Osa 2: Propertiesi ekraanipilt, bitikiiruse arvutus, voogude tabel ja kaks lauset.
+3. Osa 3: filmi nimi ja neli arvutust.
+4. Osa 4: kokkuvõte.
 
 ## Arvestamise kriteeriumid
 
 Ülesanne loetakse **arvestatuks**, kui:
 
-- A osa mõõtmised on tehtud, ekraanipildid kuupäevaga lisatud ja Mbps → MB/s ning allalaadimisaja arvutus on õige ja käik nähtav;
-- B1 arvutus on tehtud õiges järjekorras oma resolutsiooniga ja tulemus on mõistlik (õiged ühikud);
-- B2 mõlema salvestuse suurus on näidatud ekraanipildiga ja oodatud/tegelik võrreldud;
-- B3 selgitus on sisuliselt korrektne.
+- osa 1 mõõtmised on tehtud ja ekraanipildid kuupäevaga lisatud, Mbps → MB/s teisendus on õige;
+- osa 2 bitikiiruse arvutus on tehtud õigete ühikutega ja voogude tabel on täidetud (75 % kasutatavast ribalaiusest) ning käik on nähtav;
+- osa 3 neli arvutust on tehtud ja vastused on mõistlikud (ühikud ja suurusjärgud);
+- kokkuvõte on olemas.
 
 ## Õpetaja märkmed
 
-- **Isikupärasus:** oma ekraani resolutsioon, oma speedtest, oma `ping`-id ja oma OBS-failid. Õpilaste vastused erinevad, mistõttu AI-ga teha ei saa.
-- **Kontrollimine B1:** laius × kõrgus × 3 × 30 = baite sekundis. Näide 1920 × 1080: 186 624 000 B/s ≈ 186,6 MB/s; 60 s ≈ 11,2 GB; ≈ 1,49 Gbps. 2560 × 1440: 3 686 400 px × 3 = 11 059 200 B/kaader; × 30 = 331 776 000 B/s; 60 s ≈ 19,9 GB; ≈ 2,65 Gbps.
-- **Kontrollimine B2:** 6000 kbps × 30 s ÷ 8 = 22,5 MB; 2500 kbps × 30 s ÷ 8 ≈ 9,4 MB; lubatud hälve ~±15 % (heli, konteiner). Suurem hälve tähendab sageli, et bitikiirus või Rate Control jäi valesti.
-- **Tüüpilised vead:** Mbps ja MB/s segamine (unustatud ÷ 8); kbps → Mbps vale teisendus; „Size on disk” asemel Size; värvisügavus 24 bitti on 3 baiti (mitte 24 baiti).
+- **Isikupärasus:** õpilase enda speedtest, ping-id, fail (telefonist või OBS-ist) ja film. Tulemused erinevad igal õpilasel, ekraanipildid on kuupäevaga.
+- **Kontrollimine osa 2a:** bitikiirus = MB × 8 ÷ s. Näide OBS-salvestus 22,5 MB / 30 s → 6 Mbps. Telefonivideo on tavaliselt 10–20 Mbps (1080p/4K), seega sageli suurem kui OBS-i 6 Mbps.
+- **Kontrollimine osa 2b:** voogude arv = 0,75 × allalaadimise Mbps ÷ voo Mbps, alla ümardatud. Näide 200 Mbps: 150 ÷ 8 = 18 voogu (1080p); 150 ÷ 40 = 3 voogu (4K).
+- **Kontrollimine osa 3:** 2-tunnine film (7200 s) 8 Mbps: 8 × 7200 ÷ 8 = 7200 MB ≈ 7,2 GB. Tihendamata 1080p30: 186,624 MB/s × 7200 ≈ 1 343 693 MB ≈ **1,34 TB**; suhe ≈ 187.
+- **Tüüpilised vead:** Mbps ja MB/s segamine (unustatud ÷ 8); minutid sekunditeks muutmata jätmine; kbps → Mbps vale teisendus; Properties *Size on disk* asemel *Size*; 24 bitti = 24 baiti (peab olema 3 baiti).
+- **Märkus mahu kohta:** ÕV1 iseseisva töö kogumaht on 36 t. Ülesanne 4 on varasemast 4 t asemel ~3 t, ülejäänud maht tuleb jaotada teistele ülesannetele või jätta valikulisteks osadeks.
 
 ---
 [← Kohtumine 4](04-vorguressursid-ja-video-kodeerimine.md) | [Indeks](README.md)

@@ -4,6 +4,8 @@
 
 **Materjalid:** esitlus „Kohtumine 4 — Võrguressursid ja video kodeerimine” (Claude Artifact) · koduülesanne: [04-ulesanne-4.md](04-ulesanne-4.md)
 
+**A4 abimaterjalid (PDF, trükkimiseks; md-allikad samas kaustas):** [põhimõistete spikker](04-materjalid/04-spikker-pohimoisted.pdf) · [video kodeerimise spikker](04-materjalid/04-spikker-video-kodeerimine.pdf) · [OBS Studio juhend](04-materjalid/04-juhend-obs-studio.pdf) · [VLC praktika juhis](04-materjalid/04-juhend-vlc-voog.pdf). PDF-i saab uuesti genereerida skriptiga `04-materjalid/build.py` (`python3 build.py sisend.md valjund.pdf`; vajab `markdown` ja `playwright`).
+
 ## Tunni eesmärk
 
 Õpilane oskab hinnata, kui palju andmeid video tekitab, kui kiire võrk selle edastamiseks vaja on, ja mõõta seda ka päris seadmetel (OBS, VLC, `ping`). See laiendab Kohtumise 2 ühikuid (bit, bait, MB, GB) ja Kohtumise 3 kodeerimise ideed (sama sisu, erinev maht olenevalt kodeeringust) võrgule ja videole.
@@ -141,7 +143,7 @@ Tee paaris. Üks on saatja, teine vastuvõtja. Kasutage Ülesandes 2 leitud IP-a
 
 ## Ülesanne 4 ja kokkuvõte (10 min)
 
-Tutvusta ülesannet (täpne juhend: [04-ulesanne-4.md](04-ulesanne-4.md)). Tähtaeg **01.11.2026 kell 20:00**.
+Tutvusta ülesannet „Minu võrk ja minu film” (täpne juhend: [04-ulesanne-4.md](04-ulesanne-4.md), ~3 t). Soovita OBS-failid alles hoida, neid kasutatakse koduülesandes. Tähtaeg **01.11.2026 kell 20:00**.
 
 Kolm mõtet, mida meelde jätta:
 

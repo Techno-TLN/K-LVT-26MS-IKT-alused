@@ -40,7 +40,7 @@ Kohtumised toimuvad üle nädala, 8 kohtumist á 2 tundi (16 tundi kokku, ehk 16
 | 1 | 07.09.2026 (E) | Sissejuhatus ja õppekorraldus | AI-teenuse ressursivajadus ja AI kasutus õppetöös (5 t) | [01](01-sissejuhatus-ja-oppekorraldus.md) |
 | 2 | 21.09.2026 (E) | Arvusüsteemid ja andmemahu ühikud | Minu kodune võrk: IP, MAC, mask, gateway, DNS (4 t) | [02](02-arvusysteemid-ja-andmemahu-uhikud.md) |
 | 3 | 05.10.2026 (E) | Teenuste liigid, riistvararessursid ja teksti kodeerimine | Teenused ja kodeeringu katse (HTML ANSI/UTF-8) (5 t) | [03](03-teenuste-liigid-ja-riistvararessursid.md) |
-| 4 | 19.10.2026 (E) | Võrguressursid ja video kodeerimine | Võrgukiirus ja video maht (OBS-iga) (4 t) | [04](04-vorguressursid-ja-video-kodeerimine.md), [ülesanne](04-ulesanne-4.md) |
+| 4 | 19.10.2026 (E) | Võrguressursid ja video kodeerimine | Minu võrk ja minu film (3 t) | [04](04-vorguressursid-ja-video-kodeerimine.md), [ülesanne](04-ulesanne-4.md) |
 | 5 | 02.11.2026 (E) | Infrastruktuuriressursid (tund algab CSV-sissejuhatusega) | Toitevajadus ja UPS (4 t) | [05](05-infrastruktuuriressursid.md) |
 | 6 | 16.11.2026 (E) | Litsentsid ja kulud | Litsentsi- ja elutsüklikulu (4 t) | [06](06-litsentsid-ja-kulud.md) |
 | 7 | 30.11.2026 (E) | Inimressurss ja tugi | Rühmatöö ettevalmistus (5 t) | [07](07-inimressurss-ja-tugi.md) |
@@ -102,6 +102,7 @@ Kohtumised toimuvad üle nädala, 8 kohtumist á 2 tundi (16 tundi kokku, ehk 16
 - Koduülesande lihtsustus: vt märkust Kohtumise 3 failis.
 - Suuri muudatusi olemasolevatesse materjalidesse praegu ei tehta.
 - **05.10.2026 (hiljem):** Kohtumine 4 kirjutati ümber uues vormingus: tunni md-fail koos harjutustega + koduülesanne eraldi md-failis (`04-ulesanne-4.md`). Lisati OBS- ja VLC-praktika, Ülesanne 4 lihtsustati (kohustuslik: võrgukiirus, video arvutus, OBS-salvestus). CSV-formaat viidi Kohtumise 5 algusse.
+- **19.10.2026:** Kohtumisele 4 lisati neli A4 abimaterjali (`04-materjalid/`: põhimõistete spikker, video kodeerimise spikker, OBS Studio juhend, VLC praktika juhis; PDF + md). Ülesanne 4 kirjutati ümber lihtsamaks ja isiklikumaks („Minu võrk ja minu film”, ~3 t, tähtaeg 01.11.2026 kell 20:00).
 
 ---
 
