@@ -4,7 +4,7 @@
 
 **Materjalid:** esitlus „Kohtumine 4 — Võrguressursid ja video kodeerimine” (Claude Artifact) · koduülesanne: [04-ulesanne-4.md](04-ulesanne-4.md)
 
-**A4 abimaterjalid (PDF, trükkimiseks; md-allikad samas kaustas):** [põhimõistete spikker](04-materjalid/04-spikker-pohimoisted.pdf) · [video kodeerimise spikker](04-materjalid/04-spikker-video-kodeerimine.pdf) · [OBS Studio juhend](04-materjalid/04-juhend-obs-studio.pdf) · [VLC praktika juhis](04-materjalid/04-juhend-vlc-voog.pdf) · [Windowsi vahendid võrgu jõudluse vaatamiseks](04-materjalid/04-spikker-windows-vorgu-joudlus.pdf). PDF-i saab uuesti genereerida skriptiga `04-materjalid/build.py` (`python3 build.py sisend.md valjund.pdf`; vajab `markdown` ja `playwright`).
+**A4 abimaterjalid (PDF, trükkimiseks; md-allikad samas kaustas):** [põhimõistete spikker](04-materjalid/04-spikker-pohimoisted.pdf) · [video kodeerimise spikker](04-materjalid/04-spikker-video-kodeerimine.pdf) · [OBS Studio juhend](04-materjalid/04-juhend-obs-studio.pdf) · [VLC praktika juhis](04-materjalid/04-juhend-vlc-voog.pdf) · [Windowsi vahendid võrgu jõudluse vaatamiseks](04-materjalid/04-spikker-windows-vorgu-joudlus.pdf) · [TCP ja UDP ning video edastuse protokollid](04-materjalid/04-spikker-tcp-udp-protokollid.pdf). PDF-i saab uuesti genereerida skriptiga `04-materjalid/build.py` (`python3 build.py sisend.md valjund.pdf`; vajab `markdown` ja `playwright`).
 
 ## Tunni eesmärk
 
@@ -14,21 +14,21 @@
 
 | Aeg | Teema | Harjutus |
 |---|---|---|
-| 00:00–00:10 | Ülesande 3 tagasivaade: kuidas HTML-failid kuvati, krõbin ja meta charset | arutelu |
-| 00:10–00:30 | Võrguressursid: ribalaius, latentsus, bit vs bait, Wi-Fi vs kaabel, topoloogia | 1. `ping` ja latentsus; 2. Mbps ↔ MB/s |
-| 00:30–00:45 | Video kodeerimine: resolutsioon, kaadrisagedus, värvisügavus, bitikiirus, kodek | 3. Tihendamata video maht |
-| 00:45–01:05 | Praktika: OBS salvestus | 4. Kaks salvestust, tegelik suurus vs arvutus |
-| 01:05–01:20 | Praktika: VLC ülekanne paaris | 5. Voog arvuti vahel, latentsuse hindamine |
-| 01:20–01:30 | Ülesanne 4 ja kokkuvõte | — |
+| 00:00–00:05 | Ülesande 3 tagasivaade: kuidas HTML-failid kuvati, krõbin ja meta charset | arutelu |
+| 00:05–00:30 | Võrguressursid: ribalaius, latentsus, bit vs bait, Wi-Fi vs kaabel, topoloogia, **TCP ja UDP** | 1. `ping` ja latentsus; 2. Mbps ↔ MB/s |
+| 00:30–00:50 | Video kodeerimine: resolutsioon, kaadrisagedus, värvisügavus, bitikiirus, kodek, **video edastuse protokollid** | 3. Tihendamata video maht |
+| 00:50–01:10 | Praktika: OBS salvestus | 4. Kaks salvestust, tegelik suurus vs arvutus |
+| 01:10–01:25 | Praktika: VLC ülekanne paaris | 5. Voog arvuti vahel, latentsuse hindamine |
+| 01:25–01:30 | Ülesanne 4 ja kokkuvõte | — |
 
 Kui aega napib, jäta harjutus 5 õpetaja demoks. Selle tunni praktika vajab rohkem aega kui eelmised, seega teooria hoia lühike.
 
-## 1. Tagasivaade: Ülesanne 3 (10 min)
+## 1. Tagasivaade: Ülesanne 3 (5 min)
 
 - Mida nägid, kui UTF-8 fail oli märgitud `windows-1252`? Mida, kui ANSI fail oli märgitud `utf-8`?
 - Küsi 2–3 õpilaselt, mis kõige rohkem üllatas. Seo järgmisega: **sama sisu, erinev kujutus baitides, seega erinev maht ja erinev tõlgendus**. Täpselt sama mõte kehtib ka videos.
 
-## 2. Võrguressursid (20 min koos harjutustega)
+## 2. Võrguressursid ja TCP/UDP (25 min koos harjutustega)
 
 **Ribalaius (bandwidth)** on, kui palju andmeid võrk ajaühikus edastab. Mõõdetakse bittides sekundis: Mbps (megabitti sekundis), Gbps.
 
@@ -39,6 +39,8 @@ Kui aega napib, jäta harjutus 5 õpetaja demoks. Selle tunni praktika vajab roh
 **Wi-Fi vs kaabel.** Kaabel: stabiilne latentsus, vähem häireid. Wi-Fi: mugav, kuid ribalaius ja latentsus kõiguvad (kaugus, seinad, teised võrgud, jagatud ribalaius). Reaalajas edastuse (video, kõned) jaoks loeb kõige rohkem **stabiilsus**, mitte tipukiirus.
 
 **Topoloogia.** Täht (kõik seadmed ühe kommutaatori/ruuteri taga) on tavaline ka koolis ja kodus. Ühise lüli ribalaius jagatakse seadmete vahel: 100 Mbps lüli, millel on 10 aktiivset voogu, annab igaühele keskmiselt ~10 Mbps.
+
+**TCP ja UDP (5 min).** Võrgus liiguvad andmed pakettidena ja transpordiprotokoll otsustab, mis juhtub kadunud paketiga. **TCP** loob ühenduse, saadab kadunud paketi uuesti, hoiab järjekorra ja aeglustab ülekoormuse korral: täpne, aga viivitusega (veeb, e-post, failid). **UDP** saadab kohe ja ei saada kadunud paketti uuesti: kaod jäävad kaduma, aga viivitust ei ole (videokõne, otseülekanne, mängud). **Mõju kasulikule andmemahule:** päised võtavad ~5 % lingi kiirusest (1500 B pakett: TCP-ga 1460 B andmeid, UDP-ga 1472 B); TCP kordussaatmine ja kiiruse vähendamine pakettide kao korral vähendavad kasulikku mahtu lisaks; üks kadunud pakett peatab TCP-s järgmised andmed, mistõttu pilt hangub. Vt A4 spikker „TCP ja UDP ning video edastuse protokollid". VLC HTTP-voog (harjutus 5) kasutab TCP-d.
 
 ### Harjutus 1 — `ping` ja latentsus (5 min)
 
@@ -68,7 +70,7 @@ e) Mitu 8 Mbps videovoogu mahub 100 Mbps lülile (ideaalis ja realistlikult, kui
 
 **Vastused (õpetajale):** a) 12,5 MB/s. b) 125 MB/s. c) 2000 MB ÷ 12,5 MB/s = 160 s ≈ 2 min 40 s (päriselt veidi rohkem). d) 25 ÷ 8 = 3,125 MB/s × 3600 s = 11 250 MB ≈ 11,25 GB. e) 100 ÷ 8 = 12,5, seega 12 voogu ideaalis; 75 Mbps ÷ 8 ≈ 9 voogu realistlikult.
 
-## 3. Video kodeerimine (15 min koos harjutusega)
+## 3. Video kodeerimine ja protokollid (20 min koos harjutusega)
 
 Video on pildid ühe teise järel. Selle maht sõltub neljast asjast:
 
@@ -90,6 +92,8 @@ See on liiga palju edastamiseks ja salvestamiseks, seega videot **tihendatakse k
 Näide: H.264, 8 Mbps, 60 s → 8 × 60 ÷ 8 = 60 MB. Võrreldes tihendamata 11,2 GB-ga on see ligikaudu 186 korda väiksem.
 
 **Kompromiss:** väiksem bitikiirus = väiksem fail ja väiksem võrgukoormus, kuid halvem kvaliteet ning vajab rohkem arvutusvõimsust kodeerimiseks (seos Kohtumise 3 CPU/GPU-ga).
+
+**Video edastuse protokollid (5 min, maailmapilt).** **RTP/RTSP** (UDP; IP-kaamerad, IPTV), **RTMP** (TCP; saatmine serverisse, OBS-i vaikeviis), **SRT** (UDP + vigade parandus; ebastabiilne võrk), **HLS/MPEG-DASH** (HTTP, TCP; vaatajale jagamine, viivitus kümneid sekundeid), **WebRTC** (UDP; videokõned, alla 0,5 s), **NDI/SMPTE ST 2110** (kohtvõrk; stuudio ja AV). Mida väiksem viivitus, seda tihedamini UDP. Latentsused on ligikaudsed. Täpsem tabel on A4 spikris.
 
 ### Harjutus 3 — Tihendamata video maht (5 min)
 
@@ -143,7 +147,7 @@ Tee paaris. Üks on saatja, teine vastuvõtja. Kasutage Ülesandes 2 leitud IP-a
 
 **Arutelu:** miks ülekanne viibib mitu sekundit, kuigi võrk on kiire? (puhverdus + kodeerimine + dekodeerimine). Ribalaius ei ole latentsus.
 
-## Ülesanne 4 ja kokkuvõte (10 min)
+## Ülesanne 4 ja kokkuvõte (5 min)
 
 Tutvusta ülesannet „Minu võrk ja minu film” (täpne juhend: [04-ulesanne-4.md](04-ulesanne-4.md), ~3 t). Soovita OBS-failid alles hoida, neid kasutatakse koduülesandes. Tähtaeg **01.11.2026 kell 20:00**.
 

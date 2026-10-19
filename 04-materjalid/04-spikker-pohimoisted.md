@@ -24,8 +24,10 @@
 | **Ribalaius** (bandwidth) | kui palju andmeid mahub ajaühikus läbi | Mbps, Gbps |
 | **Latentsus** (latency) | kui kaua andmetel teekond kestab | ms; ping |
 | **Ping** | käsk, mis mõõdab ühe paketi edasi-tagasi aega | `ping -n 10 aadress` (Windows) |
-| **Pakettide kadu** | osa andmepakette ei jõua kohale | % ; põhjustab tõmblemist |
-| **Jitter** | latentsuse kõikumine | stabiilsus loeb reaalajas videol |
+| **Pakettide kadu** | osa andmepakette ei jõua kohale | %; pilt hangub või heli katkeb |
+| **Latentsuse kõikumine** (jitter) | viivitus ei ole paketist paketini ühtlane | ping: 20, 22, 80, 21 ms; heli ja pilt jooksevad ebaühtlaselt |
+| **Protokoll** | kokkulepitud reeglid andmete saatmiseks | TCP, UDP, HTTP |
+| **TCP / UDP** | TCP saadab kadunud paketi uuesti (täpne, aeglasem); UDP mitte (kiire, kaod jäävad) | fail: TCP; videokõne: UDP |
 | **Gateway** | seade, mille kaudu minnakse teise võrku (ruuter) | nt 192.168.1.1 |
 | **Topoloogia (täht)** | kõik seadmed ühe kommutaatori / ruuteri taga | jagavad lüli ribalaiust |
 | **Wi-Fi vs kaabel** | Wi-Fi mugav, kuid kõikuv; kaabel stabiilne | videol loeb stabiilsus |

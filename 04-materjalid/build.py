@@ -21,6 +21,7 @@ th { background: #17233b; color: #fff; font-weight: 600 }
 tr:nth-child(even) td { background: #f7f6f2 }
 code { font-family: 'DejaVu Sans Mono', monospace; font-size: 8.4pt; background: #eef0e9; padding: 0 1mm; border-radius: 1mm }
 strong { color: #17233b }
+th strong { color: inherit }
 pre { background: #17233b; color: #eef0e9; padding: 1.6mm 2.4mm; border-radius: 1.4mm; margin: 1.2mm 0 1.6mm 0; font-size: 8.4pt }
 pre code { background: none; color: inherit; padding: 0 }
 """
