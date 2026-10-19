@@ -4,7 +4,7 @@
 
 **Materjalid:** esitlus „Kohtumine 4 — Võrguressursid ja video kodeerimine” (Claude Artifact) · koduülesanne: [04-ulesanne-4.md](04-ulesanne-4.md)
 
-**A4 abimaterjalid (PDF, trükkimiseks; md-allikad samas kaustas):** [põhimõistete spikker](04-materjalid/04-spikker-pohimoisted.pdf) · [video kodeerimise spikker](04-materjalid/04-spikker-video-kodeerimine.pdf) · [OBS Studio juhend](04-materjalid/04-juhend-obs-studio.pdf) · [VLC praktika juhis](04-materjalid/04-juhend-vlc-voog.pdf). PDF-i saab uuesti genereerida skriptiga `04-materjalid/build.py` (`python3 build.py sisend.md valjund.pdf`; vajab `markdown` ja `playwright`).
+**A4 abimaterjalid (PDF, trükkimiseks; md-allikad samas kaustas):** [põhimõistete spikker](04-materjalid/04-spikker-pohimoisted.pdf) · [video kodeerimise spikker](04-materjalid/04-spikker-video-kodeerimine.pdf) · [OBS Studio juhend](04-materjalid/04-juhend-obs-studio.pdf) · [VLC praktika juhis](04-materjalid/04-juhend-vlc-voog.pdf) · [Windowsi vahendid võrgu jõudluse vaatamiseks](04-materjalid/04-spikker-windows-vorgu-joudlus.pdf). PDF-i saab uuesti genereerida skriptiga `04-materjalid/build.py` (`python3 build.py sisend.md valjund.pdf`; vajab `markdown` ja `playwright`).
 
 ## Tunni eesmärk
 
@@ -53,6 +53,8 @@ Kui aega napib, jäta harjutus 5 õpetaja demoks. Selle tunni praktika vajab roh
 | google.com | | | | |
 
 Oodatav: gateway on kõige kiirem (tavaliselt alla ~5 ms), internetisihid aeglasemad. Küsi: miks? (rohkem lülisid, kaugem füüsiline vahemaa). Võrdle Wi-Fi-ga ühendatud arvuteid kaabliga ühendatuga, kui klassis on mõlemaid.
+
+**Windowsi vahendid:** näita õpilastele lühidalt, kuidas oma arvutis võrku jälgida: Task Manager → Performance → Ethernet/Wi-Fi (*Send*, *Receive*), Resource Monitor (`resmon` → Network) ja `netsh wlan show interfaces`. Täpsed sammud on A4 spikris „Windowsi vahendid võrgu jõudluse vaatamiseks". Kasuta seda ka harjutuses 5 (VLC): vaata saatja *Send* ja vastuvõtja *Receive* väärtust.
 
 ### Harjutus 2 — Mbps ↔ MB/s (5 min)
 

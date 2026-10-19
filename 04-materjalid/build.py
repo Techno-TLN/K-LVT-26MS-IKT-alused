@@ -21,11 +21,13 @@ th { background: #17233b; color: #fff; font-weight: 600 }
 tr:nth-child(even) td { background: #f7f6f2 }
 code { font-family: 'DejaVu Sans Mono', monospace; font-size: 8.4pt; background: #eef0e9; padding: 0 1mm; border-radius: 1mm }
 strong { color: #17233b }
+pre { background: #17233b; color: #eef0e9; padding: 1.6mm 2.4mm; border-radius: 1.4mm; margin: 1.2mm 0 1.6mm 0; font-size: 8.4pt }
+pre code { background: none; color: inherit; padding: 0 }
 """
 
 def build(src, dst):
     md = open(src, encoding='utf-8').read()
-    body = markdown.markdown(md, extensions=['tables', 'md_in_html'])
+    body = markdown.markdown(md, extensions=['tables', 'md_in_html', 'fenced_code'])
     html = f"<!doctype html><html lang='et'><head><meta charset='utf-8'><style>{CSS}</style></head><body>{body}</body></html>"
     with sync_playwright() as p:
         b = p.chromium.launch()

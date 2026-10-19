@@ -41,6 +41,8 @@ Saatja asemel allikaks töölaud: **Media → Open Capture Device…** → *Capt
 | 3 | | |
 | **Keskmine** | | |
 
+**Samal ajal:** ava saatjal ja vastuvõtjal Task Manager (Ctrl+Shift+Esc → Performance → Ethernet/Wi-Fi) ja kirjuta üles *Send* ja *Receive* (Mbps). Vt Windowsi võrguvahendite spikker.
+
 **Arutelu:** miks viivitus on mitu sekundit, kui võrk on kiire? (Vihje: puhverdus, kodeerimine, dekodeerimine.) Kuidas muutub tulemus Wi-Fi ja kaabliga?
 
 ## 5. Kui midagi ei tööta
