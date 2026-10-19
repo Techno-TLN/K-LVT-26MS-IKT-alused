@@ -113,7 +113,7 @@ e) Kui sama video on H.264-ga 5 Mbps, siis mitu MB on 10 s? Mitu korda väiksem?
 
 **Harjutus 4 — Kaks salvestust, kaks suurust**
 
-1. Seaded → **Output** → Output Mode: **Advanced** → vahekaart **Recording**: Type Standard, Format mp4 (või mkv), Encoder **x264**, Rate Control **CBR**.
+1. Seaded → **Output** → Output Mode: **Advanced** → vahekaart **Recording**: Type Standard, Format **mkv** (soovitatav, fail ei rikne katkestamisel) või mp4, Encoder **x264**, Rate Control **CBR**.
 2. **Esimene salvestus:** Seaded → **Video**: Output (Scaled) Resolution **1920 × 1080**, FPS **30**; Output → Recording → Bitrate **6000 kbps**. Salvesta **30 sekundit** (Start Recording, 30 s, Stop). Liiguta hiirt ja ava aknaid.
 3. **Teine salvestus:** resolutsioon **1280 × 720**, FPS 30, Bitrate **2500 kbps**. Salvesta taas 30 sekundit.
 4. Vaata mõlema faili suurust (Properties → Size, mitte „Size on disk”) ja kirjuta üles.
@@ -137,7 +137,7 @@ e) Kui sama video on H.264-ga 5 Mbps, siis mitu MB on 10 s? Mitu korda väiksem?
 
 *Vastuvõtja:* Media → **Open Network Stream…** → `http://<saatja-IP>:8080/demo` → Play.
 
-*Latentsuse hindamine:* saatja valib allikaks töölaua (Media → Open Capture Device → Capture mode: Desktop → Stream) ja avab oma ekraanil käimasoleva stopperi (nt Windowsi Kell). Vastuvõtja ekraanil nähtav stopper on tagasi jäänud: vahe saatja ja vastuvõtja stopperi vahel on ligikaudne latentsus sekundites. Võrrelge Wi-Fi ja kaabliga, kui võimalik.
+*Latentsuse hindamine:* saatja valib allikaks töölaua (Media → Open Capture Device → Capture mode: Desktop → Stream) ja avab oma ekraanil käimasoleva stopperi (nt Windowsi Kell). Vastuvõtja ekraanil mängiv koopia on tagasi jäänud: tee telefoniga üks foto, kus on näha mõlemad ekraanid; vahe saatja päris stopperi ja vastuvõtja ekraanil nähtava aja vahel on ligikaudne latentsus sekundites. Võrrelge Wi-Fi ja kaabliga, kui võimalik.
 
 **Võimalikud takistused (õpetaja kontrollib enne tundi):**
 

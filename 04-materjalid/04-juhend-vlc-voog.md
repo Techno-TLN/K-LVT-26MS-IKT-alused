@@ -31,8 +31,8 @@ Saatja asemel allikaks töölaud: **Media → Open Capture Device…** → *Capt
 ## 4. Mõõda latentsus
 
 1. Saatja avab oma ekraanil stopperi (Windows: *Clock → Stopwatch*) ja käivitab selle.
-2. Vastuvõtja tõmbab oma ekraanist **ekraanipildi**, kus on näha nii oma kui ka saatja stopper.
-3. **Latentsus = saatja stopperi aeg − vastuvõtjal nähtav saatja aeg.**
+2. Vastuvõtja ekraanil mängib voog, kus saatja stopper on näha. Tee telefoniga **üks foto**, kus on korraga näha mõlemad ekraanid: saatja päris stopper ja selle koopia vastuvõtja ekraanil.
+3. **Latentsus = saatja päris stopperi aeg − vastuvõtja ekraanil nähtav aeg.**
 
 | Mõõtmine | Ühendus (Wi-Fi / kaabel) | Latentsus (s) |
 |---|---|---|

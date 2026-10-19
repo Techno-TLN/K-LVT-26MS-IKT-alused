@@ -44,6 +44,6 @@
 
 ## 4. Seos tunni praktikaga
 
-- **VLC HTTP-voog** (harjutus 5) kasutab **TCP-d**: seetõttu on viivitus mitu sekundit (puhverdus + ootamine).
+- **VLC HTTP-voog** (harjutus 5) kasutab **TCP-d**. Mitmesekundiline viivitus tuleb peamiselt puhverdusest, kodeerimisest ja dekodeerimisest; kadude korral lisab ootamist TCP kordussaatmine.
 - Task Manageri *Send* ja *Receive* näitavad, kui palju bitte sekundis voog tegelikult võtab.
 - **Küsimus:** miks Teams videokõne ei kasuta HLS-i? (Vastus: HLS annaks kümneid sekundeid viivitust.)

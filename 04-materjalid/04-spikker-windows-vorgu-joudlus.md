@@ -47,8 +47,8 @@ Esimene näitab **ühenduse kiirust** (*LinkSpeed*, nt 1 Gbps), teine kokku liik
 |---|---|---|
 | Speedtest | speedtesti allalaadimine (Mbps) | |
 | Sama ajal Task Manager | *Receive* tipp (Mbps) | |
-| VLC voog (saatja) | *Send* (Mbps) | |
-| VLC voog (vastuvõtja) | *Receive* (Mbps) | |
+| VLC demo (saatja) | *Send* (Mbps) | |
+| VLC demo (vastuvõtja) | *Receive* (Mbps) | |
 | `Get-NetAdapter` | *LinkSpeed* | |
 
 **Küsimus:** miks on *Receive* tipp tavaliselt veidi väiksem kui speedtesti tulemus? Kuidas VLC voo *Send* võrdub valitud bitikiirusega?

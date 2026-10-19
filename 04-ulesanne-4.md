@@ -83,7 +83,7 @@ Kirjuta 3–4 lauset: mis üllatas sind kõige rohkem (nt tihendamata filmi maht
 ## Õpetaja märkmed
 
 - **Isikupärasus:** õpilase enda speedtest, ping-id, fail (telefonist või OBS-ist) ja film. Tulemused erinevad igal õpilasel, ekraanipildid on kuupäevaga.
-- **Kontrollimine osa 2a:** bitikiirus = MB × 8 ÷ s. Näide OBS-salvestus 22,5 MB / 30 s → 6 Mbps. Telefonivideo on tavaliselt 10–20 Mbps (1080p/4K), seega sageli suurem kui OBS-i 6 Mbps.
+- **Kontrollimine osa 2a:** bitikiirus = MB × 8 ÷ s. Näide OBS-salvestus 22,5 MB / 30 s → 6 Mbps. Telefonivideo on tavaliselt ~10–20 Mbps (1080p) või ~40–100 Mbps (4K), seega suurem kui OBS-i 6 Mbps. Windows näitab Propertiesis 1 MB = 1 048 576 B, seetõttu on arvutatud bitikiirus ~5 % madalam kui tegelik: aktsepteeri.
 - **Kontrollimine osa 2b:** voogude arv = 0,75 × allalaadimise Mbps ÷ voo Mbps, alla ümardatud. Näide 200 Mbps: 150 ÷ 8 = 18 voogu (1080p); 150 ÷ 40 = 3 voogu (4K).
 - **Kontrollimine osa 3:** 2-tunnine film (7200 s) 8 Mbps: 8 × 7200 ÷ 8 = 7200 MB ≈ 7,2 GB. Tihendamata 1080p30: 186,624 MB/s × 7200 ≈ 1 343 693 MB ≈ **1,34 TB**; suhe ≈ 187.
 - **Tüüpilised vead:** Mbps ja MB/s segamine (unustatud ÷ 8); minutid sekunditeks muutmata jätmine; kbps → Mbps vale teisendus; Properties *Size on disk* asemel *Size*; 24 bitti = 24 baiti (peab olema 3 baiti).

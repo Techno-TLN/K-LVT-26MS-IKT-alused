@@ -1,6 +1,6 @@
 # OBS Studio: ekraani salvestamine ja faili suuruse kontroll
 
-<p class="sub">Kohtumine 4 · Harjutus 4 · ~20 min · Windows, OBS Studio (ingliskeelne liides)</p>
+<p class="sub">Kohtumine 4 · Harjutus 4 · ~25 min · Windows, OBS Studio (ingliskeelne liides)</p>
 
 **Eesmärk:** salvesta kaks 30-sekundilist ekraanivideot erinevate seadetega ja võrdle faili tegelikku suurust arvutatuga.
 
